@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NEBCA Platform | Enterprise Demo</title>
+<link rel="stylesheet" href="assets/app.css">
+<link rel="stylesheet" href="assets/ux.css">
+</head>
+<body>
+<div id="login" class="login-shell">
+  <section class="login-panel">
+    <div class="brand-mark">N</div><div class="eyebrow">NELL EXECUTIVE BUSINESS COMPLIANCE ADVISERS</div>
+    <h1>NEBCA <span>PLATFORM</span></h1>
+    <p class="lead">Governance · Compliance · Evidence · Assurance</p>
+    <label>Demo user</label><select id="role"><option>Executive / Board</option><option>Compliance Manager</option><option>Operational Manager</option><option>Regulator / Inspector</option></select>
+    <label>Access code</label><input value="NEBCA-DEMO" aria-label="Access code">
+    <button class="primary" onclick="enterPlatform()">Enter secure demonstration</button>
+    <p class="fine">High-fidelity prototype · Demonstration data only</p>
+  </section>
+  <aside class="login-visual"><div class="map-grid"></div><div class="hero-copy"><small>ENTERPRISE GOVERNANCE INFRASTRUCTURE</small><h2>One controlled environment.<br>Many operational overlays.</h2><p>From obligation to evidence, action, assurance and regulator visibility.</p></div><div class="namibia">🇳🇦 &nbsp; DESIGNED IN NAMIBIA</div></aside>
+</div>
+<div id="app" class="app hidden">
+<aside class="sidebar">
+ <div class="side-brand"><div class="brand-mark small">N</div><div><b>NEBCA</b><small>PLATFORM</small></div></div>
+ <div class="tenant"><small>ACTIVE TENANT</small><b>Namibia Demo Operations</b><span id="overlayLabel">Mining Overlay · GMCDS</span></div>
+ <nav id="nav"></nav>
+ <div class="side-foot">🇳🇦 Designed in Namibia<br><span>Prototype Build 001</span></div>
+</aside>
+<main>
+<header class="topbar"><button class="mobile-menu" onclick="toggleMenu()">☰</button><div><div class="crumb">NEBCA / <span id="crumb">Executive Overview</span></div><b id="pageTitle">Executive Overview</b></div><div class="top-actions"><select id="overlay" onchange="changeOverlay()"><option value="Mining Overlay · GMCDS">Mining · GMCDS</option><option value="Fisheries Overlay · GFCDS">Fisheries · GFCDS</option><option value="Port Governance · PGCDS">Ports · PGCDS</option><option value="Harbour Integration · HICDS">Harbour · HICDS</option><option value="Petroleum Overlay · NPCDS">Petroleum · NPCDS</option></select><button class="icon">🔔<i>3</i></button><div class="avatar">GN</div></div></header>
+<section id="content" class="content"></section>
+</main>
+<div id="toast" class="toast"></div>
+<script src="assets/app.js"></script>
+<script src="assets/governance.js"></script>
+<script src="assets/compliance.js"></script>
+<script src="assets/assurance.js"></script>
+<script src="assets/risk-audit.js"></script>
+<script src="assets/mining.js"></script>
+<script src="assets/intelligence.js"></script>
+<script src="assets/fisheries.js"></script>
+<script src="assets/ports.js"></script>
+<script src="assets/harbour.js"></script>
+<script src="assets/petroleum.js"></script>
+<script src="assets/presentation.js"></script>
+<script src="assets/ux.js"></script>
+</div>
+</body></html>
